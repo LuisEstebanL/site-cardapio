@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sem-Banha Smokehouse & Brasa Brasileira | Cardápio Digital Mesa 14</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation Header -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-section" data-tab="landing" onclick="document.querySelector('[data-tab=landing]').click()">
+                <div class="brand-logo-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>Sem-Banha</h1>
+                    <span>Smokehouse & Brasa</span>
+                </div>
+            </div>
+
+            <!-- Table Status Badge -->
+            <div class="table-badge">
+                <span class="status-dot"></span>
+                <span>MESA 14 · SALÃO PRINCIPAL</span>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav">
+                <button class="nav-link" data-tab="landing">
+                    <span>🏠</span> Início
+                </button>
+                <button class="nav-link active" data-tab="menu">
+                    <span>🔥</span> Cardápio
+                </button>
+                <button class="nav-link" data-tab="bill">
+                    <span>🧾</span> Comanda
+                    <span class="mobile-badge-counter cart-badge-count">4</span>
+                </button>
+                <button class="nav-link" data-tab="camera">
+                    <span>📸</span> Câmera Social
+                </button>
+                <button class="nav-link" data-tab="passport">
+                    <span>⭐</span> Passaporte Pitmaster
+                </button>
+            </nav>
+
+            <!-- Header Quick Actions -->
+            <div class="header-actions">
+                <button class="btn-waiter">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span>Garçom</span>
+                </button>
+                <div class="avatar-badge" title="Pitmaster Level 8">A</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Views Container -->
+    <main class="main-wrapper">
+
+        <!-- ============================================================== -->
+        <!-- VIEW 1: LANDING / BOAS-VINDAS (MacBook Air - 3)                -->
+        <!-- ============================================================== -->
+        <section id="view-landing" class="view-panel">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Mesa 14 Conectada · Garçom Lucas</span>
+                    <h2 class="hero-title">Bem-vindo ao <span>Sem-Banha</span> Smokehouse & Brasa Brasileira</h2>
+                    <p class="hero-desc">
+                        Cortes nobres assados lentamente na brasa viva, defumação autêntica com lenha de macieira e a verdadeira tradição brasileira. Peça pelo celular, acompanhe sua comanda em tempo real e carimbe seu brinde lendário.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn-hero-primary btn-open-menu">
+                            🔥 Explorar Cardápio da Casa
+                        </button>
+                        <button class="btn-hero-secondary btn-open-comanda">
+                            🧾 Ver Minha Comanda (4 itens)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps How it works -->
+            <div class="steps-container">
+                <h3 class="steps-title">Como Funciona a Experiência Sem-Banha</h3>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <span class="step-number">Passo 01</span>
+                        <h4 class="step-heading">Peça sem esperar</h4>
+                        <p class="step-text">Navegue pelo cardápio, escolha pontos, molhos e acompanhamentos. Seu pedido vai direto para a cozinha e para o pitmaster.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">Passo 02</span>
+                        <h4 class="step-heading">Acompanhe e divida a conta</h4>
+                        <p class="step-text">Veja em tempo real o que já foi servido na Mesa 14. Divida igualmente entre a galera com 1 clique e pague com PIX com desconto.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-number">Passo 03</span>
+                        <h4 class="step-heading">Ganhe selos & brindes</h4>
+                        <p class="step-text">Registre uma foto da mesa na Câmera Social após a conta para carimbar o 8º selo e desbloquear Pudim Defumado ou Torresmo de Rolo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 2: CARDÁPIO (iPhone 16 - 1 & MacBook Air - 1)              -->
+        <!-- ============================================================== -->
+        <section id="view-menu" class="view-panel active">
+            <!-- Loyalty Progress Banner -->
+            <div class="loyalty-banner">
+                <div class="loyalty-banner-header">
+                    <span class="loyalty-tag">🔥 ESPECIAL DO FOGO</span>
+                    <span class="loyalty-stamp-count" id="loyalty-stamp-count">7 / 8 Selos</span>
+                </div>
+                <h2 class="loyalty-banner-title">Falta apenas 1 selo para seu brinde lendário!</h2>
+                <p class="loyalty-banner-desc">
+                    Fotografe seu brinde na mesa, compartilhe pós-conta e destrave uma <strong>Porção de Torresmo de Rolo</strong> ou <strong>Pudim de Leite na Brasa</strong> cortesia da casa.
+                </p>
+                <div class="progress-track">
+                    <div class="progress-fill" id="loyalty-progress-fill" style="width: 87.5%;"></div>
+                </div>
+                <div class="loyalty-footer">
+                    <span>87% Concluído • Nível Quase Mestre</span>
+                    <span class="link-rules" onclick="document.querySelector('[data-tab=passport]').click()">Ver Passaporte & Regras ></span>
+                </div>
+            </div>
+
+            <!-- Search & Filters -->
+            <div class="menu-controls">
+                <div class="search-box">
+                    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="search-input" class="search-input" placeholder="Buscar picanha, costela defumada, torresmo, chopp...">
+                </div>
+
+                <div class="category-scroll" id="category-scroll">
+                    <!-- Injected dynamically via app.js -->
+                </div>
+            </div>
+
+            <!-- Menu Layout: Grid + Desktop Comanda Sidebar -->
+            <div class="menu-layout">
+                <div class="menu-main-content">
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">TRADIÇÃO DO FOGO & BRASA</span>
+                        <h2 class="section-title">Mais Pedidos da Casa</h2>
+                    </div>
+
+                    <div class="dishes-grid" id="dishes-grid">
+                        <!-- Injected dynamically via app.js -->
+                    </div>
+                </div>
+
+                <!-- Desktop Sidebar: Comanda da Mesa 14 (MacBook Air - 1) -->
+                <aside class="comanda-sidebar desktop-only">
+                    <div class="comanda-header">
+                        <div class="comanda-title">
+                            <span>🧾</span> Comanda Mesa 14
+                        </div>
+                        <span class="table-badge"><span class="status-dot"></span> Ativa</span>
+                    </div>
+
+                    <div class="comanda-items-list" id="sidebar-comanda-items">
+                        <!-- Injected via app.js -->
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Subtotal dos itens</span>
+                        <span id="sidebar-subtotal" style="font-weight: 700; color: #FFF;">R$ 260,70</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Desconto PIX (5%)</span>
+                        <span>- R$ 14,60</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-total-row" style="margin-bottom: 1rem;">
+                        <span style="font-size: 0.85rem; font-weight: 800; color: #FFF;">TOTAL A PAGAR</span>
+                        <span id="sidebar-total" style="font-size: 1.35rem; font-weight: 900; color: var(--gold-400);">R$ 277,38</span>
+                    </div>
+
+                    <button class="btn-checkout-cta btn-open-comanda" style="padding: 0.85rem;">
+                        <span style="font-size: 0.95rem;">Ir para Pagamento & Selo</span>
+                        <span style="font-size: 0.65rem; opacity: 0.85;">Dividir conta ou pagar com PIX</span>
+                    </button>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 3: COMANDA & PAGAMENTO (iPhone 16 - 2 & MacBook Air - 4)  -->
+        <!-- ============================================================== -->
+        <section id="view-bill" class="view-panel">
+            <div class="bill-page-container">
+                <!-- Promo banner: Passo Final Foto da Mesa -->
+                <div class="bill-promo-card">
+                    <div class="bill-promo-icon">📸</div>
+                    <div>
+                        <div style="font-size: 0.65rem; font-weight: 800; color: var(--flame-400); text-transform: uppercase;">PASSO FINAL · FOTO DA MESA</div>
+                        <h3 class="bill-promo-title">Ganhe o 8º Selo & Brinde da Casa!</h3>
+                        <p class="bill-promo-desc">
+                            Pague agora para destravar a <strong>Câmera Social</strong> e registre o brinde com a galera para ganhar 1x Porção de Torresmo ou Pudim de Leite na Brasa na próxima visita!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Consumed Items List -->
+                <div class="comanda-sidebar" style="position: static; margin-bottom: 1.5rem;">
+                    <div class="comanda-header">
+                        <div>
+                            <div class="comanda-title">
+                                <span>🧾</span> Comanda da Mesa 14
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Comanda Digital #4920 · Aberta às 19:42 · Garçom Lucas</div>
+                        </div>
+                        <span class="table-badge"><span class="status-dot"></span> ATIVA</span>
+                    </div>
+
+                    <div class="comanda-items-list" id="bill-items-list">
+                        <!-- Injected via app.js -->
+                    </div>
+                </div>
+
+                <!-- Divisão da Conta -->
+                <div class="split-card">
+                    <div class="split-header">
+                        <div class="split-title">
+                            <span>👥</span> Divisão da Conta
+                        </div>
+                        <div class="split-tabs">
+                            <button class="split-tab-btn active">Dividir Igualmente</button>
+                            <button class="split-tab-btn" onclick="alert('Modo de divisão por consumo individual ativado!')">Por Consumo</button>
+                        </div>
+                    </div>
+
+                    <div class="split-selector">
+                        <button class="split-pill" data-split="1">1 Pessoa</button>
+                        <button class="split-pill" data-split="2">2 Pessoas</button>
+                        <button class="split-pill" data-split="3">3 Pessoas</button>
+                        <button class="split-pill active" data-split="4">4 Pessoas</button>
+                        <button class="split-pill" data-split="5">5 Pessoas</button>
+                        <button class="split-pill" data-split="6">6 Pessoas</button>
+                    </div>
+
+                    <div class="split-result-box">
+                        <span class="split-result-label">Valor estimado por pessoa:</span>
+                        <span class="split-result-value" id="bill-split-value">R$ 69,35</span>
+                    </div>
+                </div>
+
+                <!-- Taxa de Serviço (Gorjeta) -->
+                <div class="tip-section">
+                    <div class="tip-header">
+                        <span>Taxa de Serviço do Garçom</span>
+                        <span class="tip-repassed">❤ Repassado 100% à equipe</span>
+                    </div>
+                    <div class="tip-options">
+                        <button class="tip-btn" data-tip="0">
+                            <span class="tip-percent">Sem taxa</span>
+                            <span class="tip-val">R$ 0,00</span>
+                        </button>
+                        <button class="tip-btn" data-tip="10">
+                            <span class="tip-percent">10%</span>
+                            <span class="tip-val">+ R$ 26,07</span>
+                        </button>
+                        <button class="tip-btn active" data-tip="12">
+                            <span class="tip-percent">12% Padrão</span>
+                            <span class="tip-val">+ R$ 31,28</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Resumo Financeiro -->
+                <div class="summary-card">
+                    <div class="summary-row">
+                        <span>Subtotal dos Itens</span>
+                        <span id="bill-subtotal" style="color: #FFF; font-weight: 700;">R$ 260,70</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Taxa de Serviço</span>
+                        <span id="bill-tip-amount" style="color: #FFF; font-weight: 700;">R$ 31,28</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Desconto PIX (5% OFF)</span>
+                        <span id="bill-discount-amount">- R$ 14,60</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-total-row">
+                        <div class="summary-total-label">
+                            <span>VALOR TOTAL A PAGAR</span>
+                            <span class="summary-total-badge">MESA 14 LIVRE DE ESPERA</span>
+                        </div>
+                        <div class="summary-total-amount" id="bill-total-amount">R$ 277,38</div>
+                    </div>
+                </div>
+
+                <!-- Formas de Pagamento -->
+                <div class="payment-methods-card">
+                    <h3 class="payment-title">Formas de Pagamento na Mesa</h3>
+                    <div class="payment-options-list">
+                        <!-- PIX Instantâneo -->
+                        <div class="payment-option active" data-method="pix">
+                            <div class="payment-option-left">
+                                <div class="payment-radio"></div>
+                                <div class="payment-info">
+                                    <h4>
+                                        <span>PIX Instantâneo</span>
+                                        <span class="discount-tag">5% OFF</span>
+                                    </h4>
+                                    <p>QR Code na tela & Copia e Cola instantâneo</p>
+                                </div>
+                            </div>
+                            <span style="font-size: 1.2rem;">⚡</span>
+                        </div>
+
+                        <!-- PIX Details (Expanded) -->
+                        <div class="pix-box active" id="pix-box">
+                            <div class="pix-qr-container">
+                                <!-- Clean Crisp SVG QR Code -->
+                                <svg class="pix-qr-image" viewBox="0 0 100 100">
+                                    <path fill="#000" d="M0 0h30v30H0zM10 10h10v10H10zM70 0h30v30H70zM80 10h10v10H80zM0 70h30v30H0zM10 80h10v10H10zM40 0h10v20H40zM50 10h10v20H50zM0 40h20v10H0zM10 50h20v10H10zM30 40h40v20H30zM40 50h20v20H40zM70 40h20v10H70zM80 50h20v20H80zM70 70h10v30H70zM90 70h10v20H90zM40 80h20v20H40z"/>
+                                </svg>
+                            </div>
+                            <div class="pix-code-field">00020126580014BR.GOV.BCB.PIX0136sembanha-smokehouse-mesa14@bbq.com.br5204000053039865406277.385802BR5925SEMBANHA SMOKEHOUSE</div>
+                            <div class="pix-buttons-row">
+                                <button class="btn-pix-copy" id="btn-copy-pix">Copiar Código PIX</button>
+                                <button class="btn-pix-simulate" id="btn-simulate-pix">Simular Pagamento Aprovado</button>
+                            </div>
+                        </div>
+
+                        <!-- Cartão de Crédito / Débito -->
+                        <div class="payment-option" data-method="card">
+                            <div class="payment-option-left">
+                                <div class="payment-radio"></div>
+                                <div class="payment-info">
+                                    <h4>Cartão de Crédito / Débito</h4>
+                                    <p>Maquininha sem fio solicitada diretamente à mesa</p>
+                                </div>
+                            </div>
+                            <span style="font-size: 1.2rem;">💳</span>
+                        </div>
+
+                        <!-- Carteiras Digitais -->
+                        <div class="payment-option" data-method="wallet">
+                            <div class="payment-option-left">
+                                <div class="payment-radio"></div>
+                                <div class="payment-info">
+                                    <h4>Carteiras Digitais</h4>
+                                    <p>Apple Pay • Google Pay • Carteira Digital</p>
+                                </div>
+                            </div>
+                            <span style="font-size: 1.2rem;">📱</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Pagar -->
+                <button class="btn-checkout-cta" id="btn-checkout-cta">
+                    <span class="checkout-btn-text" style="font-size: 1.15rem; font-weight: 900;">Pagar R$ 277,38 & Ativar Câmera</span>
+                    <span class="checkout-badge-security">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Pagamento criptografado • Mesa 14 liberada automaticamente
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 4: CÂMERA SOCIAL (iPhone 16 - 3 & MacBook Air - 5)         -->
+        <!-- ============================================================== -->
+        <section id="view-camera" class="view-panel">
+            <div class="studio-container">
+                <div class="studio-banner">
+                    <h3>CONTA PAGA · MESA 14 • 8º SELO 8/8</h3>
+                    <p>Registre a mesa com a galera e libere seu brinde lendário!</p>
+                </div>
+
+                <!-- Camera Viewfinder -->
+                <div class="camera-viewfinder-card">
+                    <div class="viewfinder-viewport">
+                        <video id="camera-video" playsinline autoplay muted></video>
+                        <canvas id="camera-canvas"></canvas>
+                        <img id="captured-image" src="assets/images/toast-friends.jpg" alt="Foto da mesa">
+
+                        <!-- Stamp Overlay -->
+                        <div class="stamp-overlay frame-fire" id="stamp-overlay">
+                            <div class="stamp-top-badge">🔥 FOGO & BRASA OFICIAL</div>
+                            <div class="stamp-bottom-info">
+                                <div>
+                                    <div style="font-size: 0.9rem; font-weight: 900; color: #FFF;">Mesa 14 · Noite Épica de Ribs & Chopp</div>
+                                    <div style="font-size: 0.7rem; color: var(--gold-400);">Salão Principal • Sem-Banha BBQ</div>
+                                </div>
+                                <div class="stamp-seal-badge">8º SELO MESA</div>
+                            </div>
+                        </div>
+
+                        <!-- Flash element -->
+                        <div class="camera-flash" id="camera-flash"></div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="viewfinder-controls">
+                        <button class="btn-circle-control" id="btn-timer" title="Timer">⏱</button>
+                        <button class="btn-shutter" id="btn-shutter" title="Tirar Foto"></button>
+                        <button class="btn-circle-control" id="btn-flip-cam" title="Trocar Câmera">🔄</button>
+                    </div>
+                </div>
+
+                <!-- Frame Selection -->
+                <div class="frames-selector">
+                    <div class="frames-label">ESCOLHA O TEMA DO CARIMBO:</div>
+                    <div class="frames-scroll">
+                        <button class="frame-pill active" data-frame="fogo-brasa" data-badge="🔥 FOGO & BRASA OFICIAL">🔥 Fogo & Brasa</button>
+                        <button class="frame-pill" data-frame="vintage-steak" data-badge="🥩 VINTAGE STEAKHOUSE">🥩 Vintage Steak</button>
+                        <button class="frame-pill" data-frame="noite-epica" data-badge="🍻 NOITE ÉPICA DE RIBS">🍻 Noite Épica</button>
+                        <button class="frame-pill" data-frame="gold" data-badge="⭐ 8º SELO PITMASTER">⭐ Mestre Pitmaster</button>
+                    </div>
+                </div>
+
+                <!-- Explanatory note -->
+                <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 0.85rem; margin-bottom: 1.25rem;">
+                    <div style="font-size: 0.75rem; font-weight: 800; color: var(--gold-400); margin-bottom: 0.2rem;">Como funciona o resgate?</div>
+                    <p style="font-size: 0.75rem; color: var(--text-secondary); line-height: 1.35;">
+                        Ao registrar este clique, sua foto será fixada no Mural de Memórias da mesa e seu passaporte completará os 8 carimbos para retirar seu brinde com o garçom.
+                    </p>
+                </div>
+
+                <!-- Actions -->
+                <div class="studio-actions">
+                    <button class="btn-save-stamp" id="btn-save-stamp">
+                        Salvar Foto & Carimbar Selo Final
+                    </button>
+                    <button class="btn-skip-photo" id="btn-skip-photo">
+                        Carimbar sem foto (Continuar)
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================== -->
+        <!-- VIEW 5: PASSAPORTE PITMASTER (iPhone 16 - 4 & MacBook Air - 2) -->
+        <!-- ============================================================== -->
+        <section id="view-passport" class="view-panel">
+            <div class="passport-container">
+                <!-- Hero Pitmaster Card -->
+                <div class="passport-hero-card">
+                    <div class="passport-badge-ribbon">⭐ PASSAPORTE COMPLETO</div>
+                    <h2 class="passport-title">Parabéns, Pitmaster!</h2>
+                    <p class="passport-desc">
+                        Você carimbou suas 8 visitas lendárias na brasa viva. Seu nível é <strong>Mestre Churrasqueiro</strong>. Aproveite seu brinde especial da casa!
+                    </p>
+
+                    <!-- 8 Stamps Grid -->
+                    <div class="stamps-grid" id="stamps-grid">
+                        <!-- Injected via app.js -->
+                    </div>
+                </div>
+
+                <!-- Reward Card -->
+                <div class="reward-unlocked-card" id="passport-reward-box">
+                    <div class="reward-title-tag">BRINDE DESBLOQUEADO</div>
+                    <h3 class="reward-name">Pudim de Leite Defumado na Brasa ou Tábua de Petiscos</h3>
+                    <p class="reward-desc">
+                        Pudim artesanal de leite condensado assado no forno a lenha com calda de caramelo âmbar e raspas de limão caipira. Ou escolha 1x Porção de Petiscos da Casa na sua próxima visita.
+                    </p>
+
+                    <div class="coupon-display-wrap">
+                        <div>
+                            <div style="font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase;">CÓDIGO DO CUPOM DA MESA</div>
+                            <div class="coupon-code" id="coupon-code-text">#SEMBANHA-8SELOS-2025</div>
+                        </div>
+                        <button class="btn-copy-coupon" id="btn-copy-coupon">Copiar</button>
+                    </div>
+
+                    <div class="reward-actions-row">
+                        <button class="btn-redeem-waiter" id="btn-redeem-waiter">
+                            🍽 Resgatar Brinde com Garçom
+                        </button>
+                        <button class="btn-share-achievement" id="btn-share-achievement">
+                            Compartilhar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mural of Memories -->
+                <div class="mural-section">
+                    <div class="mural-header">
+                        <h3 class="mural-title">Mural das 8 Mesas</h3>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">Momentos eternizados no braseiro</span>
+                    </div>
+
+                    <div class="mural-grid" id="mural-grid">
+                        <!-- Injected via app.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mobile Floating Table Summary Pill -->
+    <div class="mobile-floating-status" id="mobile-floating-status">
+        <div class="floating-status-left">
+            <span class="status-dot"></span>
+            <div>
+                <div style="font-size: 0.75rem; font-weight: 800;">Mesa 14 Ativa</div>
+                <div style="font-size: 0.65rem; color: var(--gold-400);">Pedindo em Galera</div>
+            </div>
+        </div>
+        <button class="btn-open-comanda-pill btn-open-comanda">Ver Comanda</button>
+    </div>
+
+    <!-- Mobile Bottom Navigation Bar (iPhone 16) -->
+    <nav class="mobile-nav-bar">
+        <button class="mobile-nav-item active" data-tab="menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h3v-20zM6 2h3a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6v-20z"/>
+            </svg>
+            <span>Cardápio</span>
+        </button>
+        <button class="mobile-nav-item" data-tab="bill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span class="mobile-badge-counter cart-badge-count">4</span>
+            <span>Comanda</span>
+        </button>
+        <button class="mobile-nav-item" data-tab="camera">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+            <span>Câmera</span>
+        </button>
+        <button class="mobile-nav-item" data-tab="passport">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span>Selos</span>
+        </button>
+    </nav>
+
+    <!-- Dish Customizer Modal / Bottom Sheet (iPhone 16 - 5) -->
+    <div class="modal-overlay" id="dish-modal-overlay">
+        <div class="dish-modal-sheet">
+            <div class="modal-hero-media">
+                <img id="modal-hero-img" class="modal-hero-img" src="" alt="Prato selecionado">
+                <button class="modal-close-btn" id="modal-close-btn">✕</button>
+            </div>
+
+            <div class="modal-content">
+                <div class="modal-title-row">
+                    <h3 class="modal-dish-title" id="modal-title">Costela BBQ Defumada 12h</h3>
+                    <span class="modal-dish-price" id="modal-price">R$ 109,90</span>
+                </div>
+                <p class="modal-dish-desc" id="modal-desc"></p>
+
+                <!-- Section: Acompanhamentos (Obrigatório) -->
+                <div class="custom-section">
+                    <div class="custom-section-title">
+                        <span>Acompanhamento</span>
+                        <span class="custom-tag-req">OBRIGATÓRIO · ESCOLHA 1</span>
+                    </div>
+                    <div class="custom-options-list" id="modal-sides-list"></div>
+                </div>
+
+                <!-- Section: Molhos Adicionais (Opcional) -->
+                <div class="custom-section">
+                    <div class="custom-section-title">
+                        <span>Molho Adicional</span>
+                        <span style="font-size: 0.65rem; color: var(--text-muted);">OPCIONAL · ATÉ 2</span>
+                    </div>
+                    <div class="custom-options-list" id="modal-sauces-list"></div>
+                </div>
+
+                <!-- Section: Observações da Cozinha -->
+                <div class="custom-section">
+                    <div class="custom-section-title">
+                        <span>Observações da Cozinha</span>
+                    </div>
+                    <textarea class="custom-notes-input" id="modal-notes" placeholder="Ex: Ponto da carne, molho à parte, tirar cebola..."></textarea>
+                </div>
+            </div>
+
+            <!-- Modal Bottom CTA -->
+            <div class="modal-footer-cta">
+                <div class="modal-qty-control">
+                    <button class="qty-btn" id="modal-qty-minus">−</button>
+                    <span class="qty-val" id="modal-qty-val" style="min-width: 28px;">1</span>
+                    <button class="qty-btn" id="modal-qty-plus">+</button>
+                </div>
+                <button class="btn-modal-add" id="btn-modal-add">
+                    ADICIONAR À COMANDA · R$ 109,90
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Waiter Call Interactive Modal -->
+    <div class="modal-overlay" id="waiter-modal-overlay">
+        <div class="dish-modal-sheet" style="max-width: 440px; padding: 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3 style="font-size: 1.1rem; font-weight: 800; color: #FFF;">Chamar Garçom</h3>
+                <button class="qty-btn" id="waiter-modal-close" style="font-size: 1.2rem;">✕</button>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                Mesa 14 · Atendimento pelo Garçom Lucas. Como podemos ajudar?
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <button class="custom-option-item waiter-option-btn" data-reason="Mais Gelo e Copos">
+                    <span>🧊 Mais Gelo e Copos</span>
+                </button>
+                <button class="custom-option-item waiter-option-btn" data-reason="Trocar Pratos ou Talheres">
+                    <span>🍴 Pratos / Talheres Limpos</span>
+                </button>
+                <button class="custom-option-item waiter-option-btn" data-reason="Dúvidas sobre o Cardápio">
+                    <span>🔥 Dúvidas sobre Cortes ou Preparo</span>
+                </button>
+                <button class="custom-option-item waiter-option-btn" data-reason="Maquininha de Cartão Física">
+                    <span>💳 Trazer Maquininha de Cartão</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dynamic Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
